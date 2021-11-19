@@ -7,5 +7,5 @@ body {
 }
 
 
-@include card('large' ,600px);
-@include card('medium' ,300px);
+@include card('large' ,600px , 10px);
+@include card('medium' ,300px , 5px);
