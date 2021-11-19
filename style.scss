@@ -48,12 +48,27 @@ a:hover {
    color: lighten($link, 10); // 顏色變淺
 }
 
+$textcolor : #222;
+
 .box {
    width:10em + 1em; 
    height: 10em - 2em;
    margin:  10 * 12px;
-   font : (20px / 10) ;
-}
+   @if $textcolor == black and $textcolor == #000 {
+     color: #000;
+   }@else{
+     color: #f20;
+   }
+} 
+
+
+
+
+
+
+
+
+
 
 
 
