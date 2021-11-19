@@ -1,0 +1,28 @@
+
+//置中
+@mixin center($val){
+   margin: $val auto 0;
+}
+// 圓角設定
+@mixin borderR($val:10px) {
+    border-radius: $val;  
+}
+
+
+.boxcenter {
+   @include center(0);
+   width: 100px;
+   height: 100px;
+   @include borderR(5px);
+}
+
+.btn_info {
+  @include borderR();
+}
+
+input {
+  @include borderR();
+
+}
+
+
