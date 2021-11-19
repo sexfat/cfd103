@@ -1,12 +1,27 @@
-$marginTop: 10px;
+//變數
+/* css註解 */  
+$margin: 10px 10px 10px 20px; // list 
 $basicfontSize :  16px;
 $gray : #e1e1e1;
+$blue : rgb(12, 101, 255);
+$fontFamily : '"Gill Sans", sans-serif;';
+$null : null;
+$color : (
+  primary : blue ,
+  info : yellow
+); // map
 
 
 
 body {
- margin: $marginTop;
+ margin: $margin;
  font-size: $basicfontSize;
- padding: 1px;
+ padding: 10px;
  background-color: $gray;
+ color: map-get($color, primary);
+ font-family: $fontFamily;
+ 
+
+
+ 
 }
