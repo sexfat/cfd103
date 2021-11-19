@@ -11,6 +11,9 @@ $color : (
   info : yellow
 ); // map
 
+$a : 30px;
+$a : 20px !default; // 設定預設值 層級最低
+
 
 
 body {
@@ -20,8 +23,6 @@ body {
  background-color: $gray;
  color: map-get($color, primary);
  font-family: $fontFamily;
- 
+ width:  $a;
 
-
- 
 }
