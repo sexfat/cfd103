@@ -1,0 +1,36 @@
+//變數
+/* css註解 */
+$margin: 10px 10px 10px 20px; // list 
+$basicfontSize : 16px;
+$gray : #e1e1e1;
+$blue : rgb(12, 101, 255);
+$link : rgb(149, 90, 252);
+$fontFamily : '"Gill Sans", sans-serif;';
+$null : null;
+$color : (primary : blue,
+    info : yellow); // map
+
+$a : 30px;
+$a : 20px !default; // 設定預設值 層級最低
+
+
+//  圖片路徑
+$file : 'assets/img'; // 字串轉數值
+$h : 'height'; // 屬性
+$class : '.box'; // class
+
+// 字級大小
+$size-1: 14px; 
+$size-2: 16px; 
+$size-3: 18px; 
+$size-4: 20px; 
+$size-5: 22px; 
+
+//顏色
+$textcolor : #222;
+//版型
+$layoutwidth : 1200px;
+//斷點
+
+// 按鈕
+$btn : large;
