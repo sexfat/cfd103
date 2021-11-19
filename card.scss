@@ -6,6 +6,13 @@ body {
  padding: 10px;
 }
 
+.box {
+  @include rect(100vw , 120px);
+  background-color: #fc6868;
+}
+
+@include btn('default' , 100px  , rgb(21, 124, 251));
+@include btn('error' , 140px  , rgb(255, 82, 8));
 
 @include card('large' ,600px , 10px);
 @include card('medium' ,300px , 5px);

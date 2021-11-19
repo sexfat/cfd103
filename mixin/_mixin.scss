@@ -8,6 +8,12 @@
     border-radius: $val;
 }
 
+@mixin rect($w , $h:$w){
+   width: $w;
+   height: $h;
+}
+
+
 // card 
 @mixin card($size , $w , $r) {
     .card-#{$size} {
@@ -29,23 +35,19 @@
     }
 }
 
+// btn
 
-
-
-
-
-.boxcenter {
-    @include center(0);
-    width: 100px;
-    height: 100px;
-    @include borderR(5px);
-}
-
-.btn_info {
-    @include borderR();
-}
-
-input {
-    @include borderR();
-
+@mixin btn($c , $w ,$bgc){
+  .btn-#{$c}{
+     width:$w;
+     padding : 10px;
+     background-color: $bgc;
+     color: invert($bgc);
+     font-size: $size-0;
+     text-align:center;
+     border: 1px solid darken($bgc , 10);
+     cursor: pointer;
+     @include borderR(5px);
+     margin-top: 10px;
+  }
 }
