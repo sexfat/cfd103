@@ -42,4 +42,24 @@ a:hover {
   padding: 10px 20px;
   text-align: center;
 }
+
+body .container-full {
+  width: 100%;
+}
+
+body .container-full .sidebar {
+  width: 30%;
+}
+
+body .container-full .sidebar .menu ul {
+  width: 100px;
+}
+
+body .container-full .sidebar .menu ul li {
+  padding: 10px;
+}
+
+body .container-full .content {
+  width: 70%;
+}
 /*# sourceMappingURL=style.css.map */

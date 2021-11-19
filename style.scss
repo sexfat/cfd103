@@ -68,9 +68,10 @@ $textcolor : #222;
 $layoutwidth : 1200px;
 
 .wrapper {
-    @if $layoutwidth == full {
+    @if $layoutwidth==full {
         width: 100%;
     }
+
     @else {
         width: 100%;
         max-width: 1200px;
@@ -78,19 +79,51 @@ $layoutwidth : 1200px;
     }
 }
 
-$btn : large; 
+$btn : large;
 
 .btn-#{$btn} {
-  min-width: 100px;
-  @if $btn == large {
-       padding:  10px 20px;
-  }
-  @else if $btn == medium {
-       padding:  8px 14px;
-   }
-  @else {
-     padding:  2px  8px;
-  }
- text-align: center;
+    min-width: 100px;
+
+    @if $btn==large {
+        padding: 10px 20px;
+    }
+
+    @else if $btn==medium {
+        padding: 8px 14px;
+    }
+
+    @else {
+        padding: 2px 8px;
+    }
+
+    text-align: center;
 }
 
+body {
+    .container-full {
+        width: 100%;
+
+        .sidebar {
+            width: 30%;
+
+            .menu {
+                ul {
+                    width: 100px;
+
+                    li {
+                        padding: 10px;
+                    }
+
+                }
+
+            }
+        }
+
+        .content {
+            width: 70%;
+        }
+    }
+
+
+
+}
