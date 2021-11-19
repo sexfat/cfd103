@@ -18,6 +18,13 @@ $h : 'height'; // 屬性
 $class : '.box'; // class
 
 
+$size-1: 14px; 
+$size-2: 16px; 
+$size-3: 18px; 
+$size-4: 20px; 
+$size-5: 22px; 
+
+
 
 body {
     margin: $margin;
@@ -99,31 +106,66 @@ $btn : large;
     text-align: center;
 }
 
-body {
-    .container-full {
-        width: 100%;
 
-        .sidebar {
-            width: 30%;
+.container-full {
+    width: 100%;
 
-            .menu {
-                ul {
-                    width: 100px;
+    .sidebar {
+        width: 30%;
 
-                    li {
-                        padding: 10px;
-                    }
+        .menu {
+            ul {
+                width: 100px;
 
+                li {
+                    padding: 10px;
                 }
 
             }
-        }
 
-        .content {
-            width: 70%;
         }
     }
 
+    .content {
+        width: 70%;
+    }
+}
 
 
+.card {
+   width:  50%;
+  .header {
+    border-bottom: 1px solid rgb(215, 215, 215);
+    h3 {
+      font-size: $size-3 ;
+    }
+    .call{       
+       
+    }
+
+  }
+  .content {
+     padding: 10px;
+
+  }
+}
+
+
+
+a {
+   color: #f20;
+   &:hover {
+       color: darken(#f20, 30);
+   }
+   &::after {
+     content: '';
+   
+   }
+   &::before {
+     content: '';
+   
+   }
+   &:active {
+     color: darkred;
+   }
 }

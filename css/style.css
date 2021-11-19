@@ -43,23 +43,59 @@ a:hover {
   text-align: center;
 }
 
-body .container-full {
+.container-full {
   width: 100%;
 }
 
-body .container-full .sidebar {
+.container-full .sidebar {
   width: 30%;
 }
 
-body .container-full .sidebar .menu ul {
+.container-full .sidebar .menu ul {
   width: 100px;
 }
 
-body .container-full .sidebar .menu ul li {
+.container-full .sidebar .menu ul li {
   padding: 10px;
 }
 
-body .container-full .content {
+.container-full .content {
   width: 70%;
+}
+
+.card {
+  width: 50%;
+}
+
+.card .header {
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.card .header h3 {
+  font-size: 18px;
+}
+
+.card .content {
+  padding: 10px;
+}
+
+a {
+  color: #f20;
+}
+
+a:hover {
+  color: #660e00;
+}
+
+a::after {
+  content: '';
+}
+
+a::before {
+  content: '';
+}
+
+a:active {
+  color: darkred;
 }
 /*# sourceMappingURL=style.css.map */
