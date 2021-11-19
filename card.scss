@@ -1,0 +1,11 @@
+@import 'base/var';
+@import 'base/reset';
+@import 'modules/card';
+@import 'mixin/mixin';
+body {
+ padding: 10px;
+}
+
+
+@include card('large' ,600px);
+@include card('medium' ,300px);

@@ -1,28 +1,51 @@
-
 //置中
-@mixin center($val){
-   margin: $val auto 0;
+@mixin center($val) {
+    margin: $val auto 0;
 }
+
 // 圓角設定
 @mixin borderR($val:10px) {
-    border-radius: $val;  
+    border-radius: $val;
 }
+
+// card 
+@mixin card($size , $w) {
+    .card-#{$size} {
+        width: $w;
+        font-size: $size-0;
+        color: #333;
+         border:  1px solid #e3e3e3;
+         min-height: 300px;
+         @include borderR();
+         box-shadow: 1px 1px 10px rgb(206, 206, 206);
+
+        .header {
+            border-bottom: 1px solid #e6e6e6;
+            padding: 20px 10px;
+        }
+
+        .content {
+        padding: 10px}
+    }
+}
+
+
+
+
 
 
 .boxcenter {
-   @include center(0);
-   width: 100px;
-   height: 100px;
-   @include borderR(5px);
+    @include center(0);
+    width: 100px;
+    height: 100px;
+    @include borderR(5px);
 }
 
 .btn_info {
-  @include borderR();
+    @include borderR();
 }
 
 input {
-  @include borderR();
+    @include borderR();
 
 }
-
-
