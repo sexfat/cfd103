@@ -77,3 +77,20 @@ $layoutwidth : 1200px;
         margin: 0 auto;
     }
 }
+
+$btn : large; 
+
+.btn-#{$btn} {
+  min-width: 100px;
+  @if $btn == large {
+       padding:  10px 20px;
+  }
+  @else if $btn == medium {
+       padding:  8px 14px;
+   }
+  @else {
+     padding:  2px  8px;
+  }
+ text-align: center;
+}
+
