@@ -1,0 +1,12 @@
+$marginTop: 10px;
+$basicfontSize :  16px;
+$gray : #e1e1e1;
+
+
+
+body {
+ margin: $marginTop;
+ font-size: $basicfontSize;
+ padding: 1px;
+ background-color: $gray;
+}
