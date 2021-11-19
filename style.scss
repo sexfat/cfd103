@@ -4,6 +4,7 @@ $margin: 10px 10px 10px 20px; // list
 $basicfontSize :  16px;
 $gray : #e1e1e1;
 $blue : rgb(12, 101, 255);
+$link : rgb(149, 90, 252);
 $fontFamily : '"Gill Sans", sans-serif;';
 $null : null;
 $color : (
@@ -14,6 +15,10 @@ $color : (
 $a : 30px;
 $a : 20px !default; // 設定預設值 層級最低
 
+$file : 'assets/img'; // 字串轉數值
+$h : 'height'; // 屬性
+$class : '.box'; // class
+
 
 
 body {
@@ -23,6 +28,23 @@ body {
  background-color: $gray;
  color: map-get($color, primary);
  font-family: $fontFamily;
- width:  $a;
+//  width:  $a;
+ #{$h} : 100px;
+ background-image: url('#{$file}/aa.jpg');
+}
+
+#{$class} {
+ width:  100px;
+} // class轉型
+
+
+a {
+   font-size: 20px;
+   color: $link;
+}
+
+a:hover {
+  // color: darken($link, 30); // 顏色變深
+   color: lighten($link, 10); // 顏色變淺
 
 }

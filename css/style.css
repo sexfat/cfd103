@@ -7,6 +7,20 @@ body {
   background-color: #e1e1e1;
   color: blue;
   font-family: '"Gill Sans", sans-serif;';
-  width: 30px;
+  height: 100px;
+  background-image: url("assets/img/aa.jpg");
+}
+
+.box {
+  width: 100px;
+}
+
+a {
+  font-size: 20px;
+  color: #955afc;
+}
+
+a:hover {
+  color: #b58cfd;
 }
 /*# sourceMappingURL=style.css.map */
