@@ -46,5 +46,15 @@ a {
 a:hover {
   // color: darken($link, 30); // 顏色變深
    color: lighten($link, 10); // 顏色變淺
-
 }
+
+.box {
+   width:10em + 1em; 
+   height: 10em - 2em;
+   margin:  10 * 12px;
+   font : (20px / 10) ;
+}
+
+
+
+

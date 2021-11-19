@@ -23,4 +23,11 @@ a {
 a:hover {
   color: #b58cfd;
 }
+
+.box {
+  width: 11em;
+  height: 8em;
+  margin: 120px;
+  font: 2px;
+}
 /*# sourceMappingURL=style.css.map */
