@@ -30,4 +30,10 @@ a:hover {
   margin: 120px;
   color: #f20;
 }
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 /*# sourceMappingURL=style.css.map */
