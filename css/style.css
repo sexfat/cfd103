@@ -157,9 +157,18 @@ a:active {
 
 .scene_01 {
   width: 100%;
-  max-width: 1024px;
+  max-width: 1200px;
   margin: 0 auto;
-  background-color: #00ffbb;
+  background-color: #d2d2d2;
   height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scene_01 .box_flex {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
 }
 /*# sourceMappingURL=style.css.map */
