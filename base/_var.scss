@@ -1,6 +1,6 @@
 //變數
 /* css註解 */
-$margin: 10px 10px 10px 20px; // list 
+$margin: 0; // list 
 $basicfontSize : 16px;
 $gray : #e1e1e1;
 $blue : rgb(12, 101, 255);
@@ -12,6 +12,10 @@ $color : (primary : blue,
 
 $a : 30px;
 $a : 20px !default; // 設定預設值 層級最低
+
+
+// 固定寬寬度
+$fixwidth : 1366px;
 
 
 //  圖片路徑

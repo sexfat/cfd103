@@ -1,13 +1,14 @@
 @import 'base/var';
 @import 'base/reset';
-@import 'modules/card';
 @import 'mixin/mixin';
+@import 'modules/card';
+@import 'modules/btn';
+@import 'modules/layout';
 
 
 body {
     margin: $margin;
     font-size: $basicfontSize;
-    padding: 10px;
     background-color: $gray;
     color: map-get($color, primary);
     font-family: $fontFamily;
@@ -52,17 +53,10 @@ a:hover {
 
 
 
-.wrapper {
-    @if $layoutwidth==full {
-        width: 100%;
-    }
 
-    @else {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-}
+
+
+
 
 
 
@@ -115,19 +109,34 @@ a:hover {
 
 
 a {
-   color: #f20;
-   &:hover {
-       color: darken(#f20, 30);
-   }
-   &::after {
-     content: '';
-   
-   }
-   &::before {
-     content: '';
-   
-   }
-   &:active {
-     color: darkred;
-   }
+    color: #f20;
+
+    &:hover {
+        color: darken(#f20, 30);
+    }
+
+    &::after {
+        content: '';
+
+    }
+
+    &::before {
+        content: '';
+
+    }
+
+    &:active {
+        color: darkred;
+    }
+}
+
+
+@include layout('wrapper' , 1366px){
+  background-color: rgb(155, 155, 155);
+  height: 400px;
+}
+
+@include layout('kv' , 100vw){
+  background-color:rgb(183, 255, 242) ;
+  height: 300px;
 }

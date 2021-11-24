@@ -8,6 +8,18 @@
     border-radius: $val;
 }
 
+@mixin br($v , $h, $num){
+   @if $v == null and $h ==null {
+         border-radius: $num;
+   }@else {
+      border-#{$v}-#{$h}-radius : $num
+   }
+}
+
+.br {
+  @include br(top , right, 10px);
+}
+
 @mixin rect($w , $h:$w){
    width: $w;
    height: $h;

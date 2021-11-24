@@ -1,0 +1,14 @@
+@mixin layout($class ,  $layoutwidth) {
+    .#{$class} {
+        @if $layoutwidth == $fixwidth {
+            width: 100%;
+            max-width: $fixwidth;
+            margin: 0 auto;
+            @content;
+        }
+        @else {
+           width:  $layoutwidth;
+            @content;
+        }
+    }
+}
