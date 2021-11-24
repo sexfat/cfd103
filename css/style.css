@@ -154,4 +154,12 @@ a:active {
   background-color: #b7fff2;
   height: 300px;
 }
+
+.scene_01 {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #00ffbb;
+  height: 300px;
+}
 /*# sourceMappingURL=style.css.map */

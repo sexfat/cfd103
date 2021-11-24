@@ -12,3 +12,21 @@
         }
     }
 }
+
+@mixin layouts($class ,  $layoutwidth) {
+    .#{$class} {
+        @if ($layoutwidth == 100vw or $layoutwidth == 100% ){
+           width : $layoutwidth;
+           @content;
+        }
+        @else {
+            width: 100%;
+            max-width: $layoutwidth;
+            margin: 0 auto;
+            @content;
+        }
+    }
+}
+
+
+
