@@ -1,0 +1,20 @@
+// =====
+//  按鈕組件 : @inlude btn(class , 寬度 , 背景色 )
+// =====
+
+
+
+@mixin btn($c , $w ,$bgc){
+  .btn-#{$c}{
+     width:$w;
+     padding : 10px;
+     background-color: $bgc;
+     color: invert($bgc);
+     font-size: $size-0;
+     text-align:center;
+     border: 1px solid darken($bgc , 10);
+     cursor: pointer;
+     @include borderR(5px);
+     margin-top: 10px;
+  }
+}

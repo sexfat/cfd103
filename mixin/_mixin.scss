@@ -11,43 +11,21 @@
 @mixin rect($w , $h:$w){
    width: $w;
    height: $h;
+   @content;
 }
 
 
-// card 
-@mixin card($size , $w , $r) {
-    .card-#{$size} {
-        width: $w;
-        font-size: $size-0;
-        color: #333;
-         border:  1px solid #e3e3e3;
-         min-height: 300px;
-         @include borderR($r);
-         box-shadow: 1px 1px 10px rgb(206, 206, 206);
+.a {
+  @include rect(300px){
+      background-color: #fff;
+      @include center(0);
+      .box {
+         width: 100px; 
+      
+      }
 
-        .header {
-            border-bottom: 1px solid #e6e6e6;
-            padding: 20px 10px;
-        }
-
-        .content {
-        padding: 10px}
-    }
-}
-
-// btn
-
-@mixin btn($c , $w ,$bgc){
-  .btn-#{$c}{
-     width:$w;
-     padding : 10px;
-     background-color: $bgc;
-     color: invert($bgc);
-     font-size: $size-0;
-     text-align:center;
-     border: 1px solid darken($bgc , 10);
-     cursor: pointer;
-     @include borderR(5px);
-     margin-top: 10px;
   }
+
+
 }
+

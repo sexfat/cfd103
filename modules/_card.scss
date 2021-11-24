@@ -1,0 +1,20 @@
+// card 
+@mixin card($size , $w , $r) {
+    .card-#{$size} {
+        width: $w;
+        font-size: $size-0;
+        color: #333;
+         border:  1px solid #e3e3e3;
+         min-height: 300px;
+         @include borderR($r);
+         box-shadow: 1px 1px 10px rgb(206, 206, 206);
+
+        .header {
+            border-bottom: 1px solid #e6e6e6;
+            padding: 20px 10px;
+        }
+
+        .content {
+        padding: 10px}
+    }
+}
