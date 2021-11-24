@@ -6,6 +6,7 @@
 @import 'modules/layout';
 @import 'modules/flexcenter';
 @import 'modules/rwd';
+@import 'modules/push';
 
 
 body {
@@ -181,6 +182,30 @@ a {
     } 
  
 }
+
+
+// 迴圈
+
+@for $i from 1 through 10 {
+  .box-#{$i} {
+    margin-left: $i * 1px; 
+  } 
+}
+
+
+
+@include push(100 , left);
+@include push(100 , top);
+
+
+
+
+
+
+
+
+
+
 
 
 

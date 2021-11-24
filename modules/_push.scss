@@ -1,0 +1,8 @@
+@mixin push($val ,$dir){
+  @for $i from 1 through $val {
+     .push-#{$dir}-#{$i} {
+        position: relative;
+        #{$dir}: $i * 1px;
+     }
+  }
+}

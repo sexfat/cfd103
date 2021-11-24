@@ -184,14 +184,14 @@ a:active {
   font-size: 16px;
 }
 
-@media all and (max-width: 996px) {
+@media all and (max-width: 1024px) {
   .rwd h1 {
     font-size: 30px;
     color: #f20;
   }
 }
 
-@media all and (max-width: 576px) {
+@media all and (max-width: 720px) {
   .rwd h1 {
     font-size: 100px;
     color: #30ff3e;
@@ -205,10 +205,1050 @@ a:active {
   background-color: #545454;
 }
 
-@media all and (max-width: 576px) {
+@media all and (max-width: 720px) {
   .rwd .conetnt {
     width: 100%;
     height: 100%;
   }
+}
+
+.box-1 {
+  margin-left: 1px;
+}
+
+.box-2 {
+  margin-left: 2px;
+}
+
+.box-3 {
+  margin-left: 3px;
+}
+
+.box-4 {
+  margin-left: 4px;
+}
+
+.box-5 {
+  margin-left: 5px;
+}
+
+.box-6 {
+  margin-left: 6px;
+}
+
+.box-7 {
+  margin-left: 7px;
+}
+
+.box-8 {
+  margin-left: 8px;
+}
+
+.box-9 {
+  margin-left: 9px;
+}
+
+.box-10 {
+  margin-left: 10px;
+}
+
+.push-left-1 {
+  position: relative;
+  left: 1px;
+}
+
+.push-left-2 {
+  position: relative;
+  left: 2px;
+}
+
+.push-left-3 {
+  position: relative;
+  left: 3px;
+}
+
+.push-left-4 {
+  position: relative;
+  left: 4px;
+}
+
+.push-left-5 {
+  position: relative;
+  left: 5px;
+}
+
+.push-left-6 {
+  position: relative;
+  left: 6px;
+}
+
+.push-left-7 {
+  position: relative;
+  left: 7px;
+}
+
+.push-left-8 {
+  position: relative;
+  left: 8px;
+}
+
+.push-left-9 {
+  position: relative;
+  left: 9px;
+}
+
+.push-left-10 {
+  position: relative;
+  left: 10px;
+}
+
+.push-left-11 {
+  position: relative;
+  left: 11px;
+}
+
+.push-left-12 {
+  position: relative;
+  left: 12px;
+}
+
+.push-left-13 {
+  position: relative;
+  left: 13px;
+}
+
+.push-left-14 {
+  position: relative;
+  left: 14px;
+}
+
+.push-left-15 {
+  position: relative;
+  left: 15px;
+}
+
+.push-left-16 {
+  position: relative;
+  left: 16px;
+}
+
+.push-left-17 {
+  position: relative;
+  left: 17px;
+}
+
+.push-left-18 {
+  position: relative;
+  left: 18px;
+}
+
+.push-left-19 {
+  position: relative;
+  left: 19px;
+}
+
+.push-left-20 {
+  position: relative;
+  left: 20px;
+}
+
+.push-left-21 {
+  position: relative;
+  left: 21px;
+}
+
+.push-left-22 {
+  position: relative;
+  left: 22px;
+}
+
+.push-left-23 {
+  position: relative;
+  left: 23px;
+}
+
+.push-left-24 {
+  position: relative;
+  left: 24px;
+}
+
+.push-left-25 {
+  position: relative;
+  left: 25px;
+}
+
+.push-left-26 {
+  position: relative;
+  left: 26px;
+}
+
+.push-left-27 {
+  position: relative;
+  left: 27px;
+}
+
+.push-left-28 {
+  position: relative;
+  left: 28px;
+}
+
+.push-left-29 {
+  position: relative;
+  left: 29px;
+}
+
+.push-left-30 {
+  position: relative;
+  left: 30px;
+}
+
+.push-left-31 {
+  position: relative;
+  left: 31px;
+}
+
+.push-left-32 {
+  position: relative;
+  left: 32px;
+}
+
+.push-left-33 {
+  position: relative;
+  left: 33px;
+}
+
+.push-left-34 {
+  position: relative;
+  left: 34px;
+}
+
+.push-left-35 {
+  position: relative;
+  left: 35px;
+}
+
+.push-left-36 {
+  position: relative;
+  left: 36px;
+}
+
+.push-left-37 {
+  position: relative;
+  left: 37px;
+}
+
+.push-left-38 {
+  position: relative;
+  left: 38px;
+}
+
+.push-left-39 {
+  position: relative;
+  left: 39px;
+}
+
+.push-left-40 {
+  position: relative;
+  left: 40px;
+}
+
+.push-left-41 {
+  position: relative;
+  left: 41px;
+}
+
+.push-left-42 {
+  position: relative;
+  left: 42px;
+}
+
+.push-left-43 {
+  position: relative;
+  left: 43px;
+}
+
+.push-left-44 {
+  position: relative;
+  left: 44px;
+}
+
+.push-left-45 {
+  position: relative;
+  left: 45px;
+}
+
+.push-left-46 {
+  position: relative;
+  left: 46px;
+}
+
+.push-left-47 {
+  position: relative;
+  left: 47px;
+}
+
+.push-left-48 {
+  position: relative;
+  left: 48px;
+}
+
+.push-left-49 {
+  position: relative;
+  left: 49px;
+}
+
+.push-left-50 {
+  position: relative;
+  left: 50px;
+}
+
+.push-left-51 {
+  position: relative;
+  left: 51px;
+}
+
+.push-left-52 {
+  position: relative;
+  left: 52px;
+}
+
+.push-left-53 {
+  position: relative;
+  left: 53px;
+}
+
+.push-left-54 {
+  position: relative;
+  left: 54px;
+}
+
+.push-left-55 {
+  position: relative;
+  left: 55px;
+}
+
+.push-left-56 {
+  position: relative;
+  left: 56px;
+}
+
+.push-left-57 {
+  position: relative;
+  left: 57px;
+}
+
+.push-left-58 {
+  position: relative;
+  left: 58px;
+}
+
+.push-left-59 {
+  position: relative;
+  left: 59px;
+}
+
+.push-left-60 {
+  position: relative;
+  left: 60px;
+}
+
+.push-left-61 {
+  position: relative;
+  left: 61px;
+}
+
+.push-left-62 {
+  position: relative;
+  left: 62px;
+}
+
+.push-left-63 {
+  position: relative;
+  left: 63px;
+}
+
+.push-left-64 {
+  position: relative;
+  left: 64px;
+}
+
+.push-left-65 {
+  position: relative;
+  left: 65px;
+}
+
+.push-left-66 {
+  position: relative;
+  left: 66px;
+}
+
+.push-left-67 {
+  position: relative;
+  left: 67px;
+}
+
+.push-left-68 {
+  position: relative;
+  left: 68px;
+}
+
+.push-left-69 {
+  position: relative;
+  left: 69px;
+}
+
+.push-left-70 {
+  position: relative;
+  left: 70px;
+}
+
+.push-left-71 {
+  position: relative;
+  left: 71px;
+}
+
+.push-left-72 {
+  position: relative;
+  left: 72px;
+}
+
+.push-left-73 {
+  position: relative;
+  left: 73px;
+}
+
+.push-left-74 {
+  position: relative;
+  left: 74px;
+}
+
+.push-left-75 {
+  position: relative;
+  left: 75px;
+}
+
+.push-left-76 {
+  position: relative;
+  left: 76px;
+}
+
+.push-left-77 {
+  position: relative;
+  left: 77px;
+}
+
+.push-left-78 {
+  position: relative;
+  left: 78px;
+}
+
+.push-left-79 {
+  position: relative;
+  left: 79px;
+}
+
+.push-left-80 {
+  position: relative;
+  left: 80px;
+}
+
+.push-left-81 {
+  position: relative;
+  left: 81px;
+}
+
+.push-left-82 {
+  position: relative;
+  left: 82px;
+}
+
+.push-left-83 {
+  position: relative;
+  left: 83px;
+}
+
+.push-left-84 {
+  position: relative;
+  left: 84px;
+}
+
+.push-left-85 {
+  position: relative;
+  left: 85px;
+}
+
+.push-left-86 {
+  position: relative;
+  left: 86px;
+}
+
+.push-left-87 {
+  position: relative;
+  left: 87px;
+}
+
+.push-left-88 {
+  position: relative;
+  left: 88px;
+}
+
+.push-left-89 {
+  position: relative;
+  left: 89px;
+}
+
+.push-left-90 {
+  position: relative;
+  left: 90px;
+}
+
+.push-left-91 {
+  position: relative;
+  left: 91px;
+}
+
+.push-left-92 {
+  position: relative;
+  left: 92px;
+}
+
+.push-left-93 {
+  position: relative;
+  left: 93px;
+}
+
+.push-left-94 {
+  position: relative;
+  left: 94px;
+}
+
+.push-left-95 {
+  position: relative;
+  left: 95px;
+}
+
+.push-left-96 {
+  position: relative;
+  left: 96px;
+}
+
+.push-left-97 {
+  position: relative;
+  left: 97px;
+}
+
+.push-left-98 {
+  position: relative;
+  left: 98px;
+}
+
+.push-left-99 {
+  position: relative;
+  left: 99px;
+}
+
+.push-left-100 {
+  position: relative;
+  left: 100px;
+}
+
+.push-top-1 {
+  position: relative;
+  top: 1px;
+}
+
+.push-top-2 {
+  position: relative;
+  top: 2px;
+}
+
+.push-top-3 {
+  position: relative;
+  top: 3px;
+}
+
+.push-top-4 {
+  position: relative;
+  top: 4px;
+}
+
+.push-top-5 {
+  position: relative;
+  top: 5px;
+}
+
+.push-top-6 {
+  position: relative;
+  top: 6px;
+}
+
+.push-top-7 {
+  position: relative;
+  top: 7px;
+}
+
+.push-top-8 {
+  position: relative;
+  top: 8px;
+}
+
+.push-top-9 {
+  position: relative;
+  top: 9px;
+}
+
+.push-top-10 {
+  position: relative;
+  top: 10px;
+}
+
+.push-top-11 {
+  position: relative;
+  top: 11px;
+}
+
+.push-top-12 {
+  position: relative;
+  top: 12px;
+}
+
+.push-top-13 {
+  position: relative;
+  top: 13px;
+}
+
+.push-top-14 {
+  position: relative;
+  top: 14px;
+}
+
+.push-top-15 {
+  position: relative;
+  top: 15px;
+}
+
+.push-top-16 {
+  position: relative;
+  top: 16px;
+}
+
+.push-top-17 {
+  position: relative;
+  top: 17px;
+}
+
+.push-top-18 {
+  position: relative;
+  top: 18px;
+}
+
+.push-top-19 {
+  position: relative;
+  top: 19px;
+}
+
+.push-top-20 {
+  position: relative;
+  top: 20px;
+}
+
+.push-top-21 {
+  position: relative;
+  top: 21px;
+}
+
+.push-top-22 {
+  position: relative;
+  top: 22px;
+}
+
+.push-top-23 {
+  position: relative;
+  top: 23px;
+}
+
+.push-top-24 {
+  position: relative;
+  top: 24px;
+}
+
+.push-top-25 {
+  position: relative;
+  top: 25px;
+}
+
+.push-top-26 {
+  position: relative;
+  top: 26px;
+}
+
+.push-top-27 {
+  position: relative;
+  top: 27px;
+}
+
+.push-top-28 {
+  position: relative;
+  top: 28px;
+}
+
+.push-top-29 {
+  position: relative;
+  top: 29px;
+}
+
+.push-top-30 {
+  position: relative;
+  top: 30px;
+}
+
+.push-top-31 {
+  position: relative;
+  top: 31px;
+}
+
+.push-top-32 {
+  position: relative;
+  top: 32px;
+}
+
+.push-top-33 {
+  position: relative;
+  top: 33px;
+}
+
+.push-top-34 {
+  position: relative;
+  top: 34px;
+}
+
+.push-top-35 {
+  position: relative;
+  top: 35px;
+}
+
+.push-top-36 {
+  position: relative;
+  top: 36px;
+}
+
+.push-top-37 {
+  position: relative;
+  top: 37px;
+}
+
+.push-top-38 {
+  position: relative;
+  top: 38px;
+}
+
+.push-top-39 {
+  position: relative;
+  top: 39px;
+}
+
+.push-top-40 {
+  position: relative;
+  top: 40px;
+}
+
+.push-top-41 {
+  position: relative;
+  top: 41px;
+}
+
+.push-top-42 {
+  position: relative;
+  top: 42px;
+}
+
+.push-top-43 {
+  position: relative;
+  top: 43px;
+}
+
+.push-top-44 {
+  position: relative;
+  top: 44px;
+}
+
+.push-top-45 {
+  position: relative;
+  top: 45px;
+}
+
+.push-top-46 {
+  position: relative;
+  top: 46px;
+}
+
+.push-top-47 {
+  position: relative;
+  top: 47px;
+}
+
+.push-top-48 {
+  position: relative;
+  top: 48px;
+}
+
+.push-top-49 {
+  position: relative;
+  top: 49px;
+}
+
+.push-top-50 {
+  position: relative;
+  top: 50px;
+}
+
+.push-top-51 {
+  position: relative;
+  top: 51px;
+}
+
+.push-top-52 {
+  position: relative;
+  top: 52px;
+}
+
+.push-top-53 {
+  position: relative;
+  top: 53px;
+}
+
+.push-top-54 {
+  position: relative;
+  top: 54px;
+}
+
+.push-top-55 {
+  position: relative;
+  top: 55px;
+}
+
+.push-top-56 {
+  position: relative;
+  top: 56px;
+}
+
+.push-top-57 {
+  position: relative;
+  top: 57px;
+}
+
+.push-top-58 {
+  position: relative;
+  top: 58px;
+}
+
+.push-top-59 {
+  position: relative;
+  top: 59px;
+}
+
+.push-top-60 {
+  position: relative;
+  top: 60px;
+}
+
+.push-top-61 {
+  position: relative;
+  top: 61px;
+}
+
+.push-top-62 {
+  position: relative;
+  top: 62px;
+}
+
+.push-top-63 {
+  position: relative;
+  top: 63px;
+}
+
+.push-top-64 {
+  position: relative;
+  top: 64px;
+}
+
+.push-top-65 {
+  position: relative;
+  top: 65px;
+}
+
+.push-top-66 {
+  position: relative;
+  top: 66px;
+}
+
+.push-top-67 {
+  position: relative;
+  top: 67px;
+}
+
+.push-top-68 {
+  position: relative;
+  top: 68px;
+}
+
+.push-top-69 {
+  position: relative;
+  top: 69px;
+}
+
+.push-top-70 {
+  position: relative;
+  top: 70px;
+}
+
+.push-top-71 {
+  position: relative;
+  top: 71px;
+}
+
+.push-top-72 {
+  position: relative;
+  top: 72px;
+}
+
+.push-top-73 {
+  position: relative;
+  top: 73px;
+}
+
+.push-top-74 {
+  position: relative;
+  top: 74px;
+}
+
+.push-top-75 {
+  position: relative;
+  top: 75px;
+}
+
+.push-top-76 {
+  position: relative;
+  top: 76px;
+}
+
+.push-top-77 {
+  position: relative;
+  top: 77px;
+}
+
+.push-top-78 {
+  position: relative;
+  top: 78px;
+}
+
+.push-top-79 {
+  position: relative;
+  top: 79px;
+}
+
+.push-top-80 {
+  position: relative;
+  top: 80px;
+}
+
+.push-top-81 {
+  position: relative;
+  top: 81px;
+}
+
+.push-top-82 {
+  position: relative;
+  top: 82px;
+}
+
+.push-top-83 {
+  position: relative;
+  top: 83px;
+}
+
+.push-top-84 {
+  position: relative;
+  top: 84px;
+}
+
+.push-top-85 {
+  position: relative;
+  top: 85px;
+}
+
+.push-top-86 {
+  position: relative;
+  top: 86px;
+}
+
+.push-top-87 {
+  position: relative;
+  top: 87px;
+}
+
+.push-top-88 {
+  position: relative;
+  top: 88px;
+}
+
+.push-top-89 {
+  position: relative;
+  top: 89px;
+}
+
+.push-top-90 {
+  position: relative;
+  top: 90px;
+}
+
+.push-top-91 {
+  position: relative;
+  top: 91px;
+}
+
+.push-top-92 {
+  position: relative;
+  top: 92px;
+}
+
+.push-top-93 {
+  position: relative;
+  top: 93px;
+}
+
+.push-top-94 {
+  position: relative;
+  top: 94px;
+}
+
+.push-top-95 {
+  position: relative;
+  top: 95px;
+}
+
+.push-top-96 {
+  position: relative;
+  top: 96px;
+}
+
+.push-top-97 {
+  position: relative;
+  top: 97px;
+}
+
+.push-top-98 {
+  position: relative;
+  top: 98px;
+}
+
+.push-top-99 {
+  position: relative;
+  top: 99px;
+}
+
+.push-top-100 {
+  position: relative;
+  top: 100px;
 }
 /*# sourceMappingURL=style.css.map */
