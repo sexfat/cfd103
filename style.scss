@@ -5,6 +5,7 @@
 @import 'modules/btn';
 @import 'modules/layout';
 @import 'modules/flexcenter';
+@import 'modules/rwd';
 
 
 body {
@@ -150,8 +151,36 @@ a {
    @include rect(100px , 100px);
    background-color: aquamarine;
 }
-  
 };
+
+
+@include layouts('rwd' , 1024px){
+    background-color: rgb(177, 234, 255);
+    height: 400px;
+    h1 {
+        font-size: 16px;
+        @include t(){
+          font-size:  30px;
+          color: #f20;
+        }
+        @include m(){
+          font-size: 100px;
+          color: rgb(48, 255, 62)
+        }
+    
+    
+    }
+
+    .conetnt {
+      @include rect(200px);
+      @include m(){
+         @include rect(100%);
+      }
+      @include center(0);
+      background-color: rgb(84, 84, 84);
+    } 
+ 
+}
 
 
 

@@ -1,0 +1,12 @@
+@mixin m(){
+  @media all and (max-width : $cell) {
+     @content; 
+  }
+}
+
+@mixin t(){
+  @media all and (max-width: $tablet){
+    @content;   
+  }
+}
+
