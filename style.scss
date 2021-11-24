@@ -8,6 +8,13 @@
 @import 'modules/rwd';
 @import 'modules/push';
 
+// layout
+@import 'layout/header';
+@import 'layout/login';
+@import 'layout/nav';
+@import 'layout/footer';
+
+
 
 body {
     margin: $margin;
