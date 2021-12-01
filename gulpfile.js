@@ -38,7 +38,7 @@ const sass = require('gulp-sass')(require('sass'));
 function sassstyle() {
     return src('./sass/style.scss') //來源檔案
         .pipe(sass.sync().on('error', sass.logError))// sass編譯
-        .pipe(dest('css'))// 目的地檔案
+        .pipe(dest('dist/css'))// 目的地檔案
 }
 
 //sass任務輸出
@@ -60,10 +60,11 @@ exports.html = includeHTML;
 
 
 //監看所有任務
-function watchsass() {
-    watch(['sass/*.scss', 'sass/**/*.scss'], sassstyle); // 監看哪些檔案（檔案變動）並執行sassstyle 
+function watchall() {
+    watch(['sass/*.scss', 'sass/**/*.scss'], sassstyle); // 監看哪些檔案（檔案變動）並執行sassstyle
+    watch(['*.html', 'layout/*.html'], includeHTML); // 監看哪些檔案（檔案變動）並執行includeHTML 
 }
 
-exports.w = watchsass;
+exports.w = watchall;
 
 
