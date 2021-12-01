@@ -44,4 +44,10 @@ function sassstyle(){
 //任務輸出
 exports.sass = sassstyle;
 
+function watchsass(){
+  watch(['sass/*.scss' ,'sass/**/*.scss'] , sassstyle);
+}
+
+exports.w = watchsass;
+
 
