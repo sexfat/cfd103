@@ -44,8 +44,10 @@ function sassstyle(){
 //任務輸出
 exports.sass = sassstyle;
 
+
+//監看所有任務
 function watchsass(){
-  watch(['sass/*.scss' ,'sass/**/*.scss'] , sassstyle);
+  watch(['sass/*.scss' ,'sass/**/*.scss'] , sassstyle); // 監看哪些檔案（檔案變動）並執行sassstyle 
 }
 
 exports.w = watchsass;
