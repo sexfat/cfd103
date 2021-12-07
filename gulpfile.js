@@ -36,7 +36,7 @@ const sass = require('gulp-sass')(require('sass'));
 
 // 任務函式
 function sassstyle() {
-    return src('./sass/style.scss') //來源檔案
+    return src('./src/sass/style.scss') //來源檔案
         .pipe(sass.sync().on('error', sass.logError))// sass編譯
         .pipe(dest('dist/css'))// 目的地檔案
 }
@@ -47,7 +47,7 @@ exports.sass = sassstyle;
 // html template
 const fileinclude = require('gulp-file-include');
 function includeHTML() {
-    return src('*.html')
+    return src('src/*.html')
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file'
@@ -61,8 +61,8 @@ exports.html = includeHTML;
 
 //監看所有任務
 function watchall() {
-    watch(['sass/*.scss', 'sass/**/*.scss'], sassstyle); // 監看哪些檔案（檔案變動）並執行sassstyle
-    watch(['*.html', 'layout/*.html'], includeHTML); // 監看哪些檔案（檔案變動）並執行includeHTML 
+    watch(['src/sass/*.scss', 'src/sass/**/*.scss'], sassstyle); // 監看哪些檔案（檔案變動）並執行sassstyle
+    watch(['src/*.html', 'src/layout/*.html'], includeHTML); // 監看哪些檔案（檔案變動）並執行includeHTML 
 }
 
 exports.w = watchall;
