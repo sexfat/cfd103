@@ -79,6 +79,17 @@ function ugjs() {
 exports.js = ugjs;
 
 
+// 清除舊檔案
+
+const clean = require('gulp-clean');
+
+function clear() {
+  return src('dist' ,{ read: false ,allowEmpty: true })//不去讀檔案結構，增加刪除效率  / allowEmpty : 允許刪除空的檔案
+  .pipe(clean({force: true})); //強制刪除檔案 
+}
+
+exports.clearall = clear;
+
 
 
 
@@ -88,7 +99,7 @@ exports.js = ugjs;
 function watchall() {
     watch(['src/sass/*.scss', 'src/sass/**/*.scss'], sassstyle); // 監看哪些檔案（檔案變動）並執行sassstyle
     watch(['src/*.html', 'src/layout/*.html'], includeHTML); // 監看哪些檔案（檔案變動）並執行includeHTML 
-    watch('src/js/*.js' , ugjs);
+    watch(['src/js/*.js' , 'src/**/*.js'] , ugjs);
 }
 
 exports.w = watchall;
