@@ -35,12 +35,14 @@ exports.b = parallel(taskA, taskB);// 同時執行
 const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
 const cleanCSS = require('gulp-clean-css');
+const autoprefixer = require('gulp-autoprefixer');
 
 // 任務函式
 function sassstyle() {
     return src('./src/sass/style.scss') //來源檔案
         .pipe(sourcemaps.init())
         .pipe(sass.sync().on('error', sass.logError))// sass編譯
+        .pipe(autoprefixer())
         .pipe(cleanCSS({compatibility: 'ie10'})) // 減小css檔案
         .pipe(sourcemaps.write())
         .pipe(dest('dist/css'))// 目的地檔案
