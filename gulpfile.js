@@ -34,6 +34,7 @@ exports.b = parallel(taskA, taskB);// 同時執行
 
 const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
+const cleanCSS = require('gulp-clean-css');
 
 // 任務函式
 function sassstyle() {
@@ -41,6 +42,7 @@ function sassstyle() {
         .pipe(sourcemaps.init())
         .pipe(sass.sync().on('error', sass.logError))// sass編譯
         .pipe(sourcemaps.write())
+        .pipe(cleanCSS({compatibility: 'ie10'})) // 
         .pipe(dest('dist/css'))// 目的地檔案
 }
 
