@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gulp 監看": "gulp w",
+    "套件的安裝": "npm i"
   },
   "repository": {
     "type": "git",
