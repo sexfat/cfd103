@@ -8,7 +8,9 @@
     <title>首頁</title>
 </head>
 <body>
-@@include('./layout/header.html')
+@@include('./layout/header.html', {
+  "logo" : "logo位置"
+})
 <div class="wrapper">首頁</div>
 @@include('./layout/footer.html')
     
