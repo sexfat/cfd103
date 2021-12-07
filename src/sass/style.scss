@@ -1,14 +1,11 @@
 @import 'base/var';
 @import 'mixin/mixin';
 @import 'layout/header';
+@import 'base/common';
 
-body {
-  font-size: $fontSize;
-  background-color: rgb(172, 177, 255);
 
-  h1 {
-    font-size: 2.2rem;
-    transition: cubic-bezier(.8) all;
-    user-select: none;
-  }
-}
+// page
+@import 'page/index';
+@import 'page/about';
+@import 'page/product';
+// @import 'page/newpage';

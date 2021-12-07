@@ -1,0 +1,24 @@
+.index {
+    // code
+
+
+    @include t() {
+        background-color: rgb(115, 255, 0);
+
+    }
+
+    @include rwd(820px) {
+
+        background-color: rgb(28, 221, 255);
+
+    }
+
+    @include m() {
+        width: 100%;
+        background-color: rgb(255, 247, 0);
+    }
+
+
+
+
+}
