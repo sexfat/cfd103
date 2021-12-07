@@ -65,8 +65,14 @@ exports.html = includeHTML;
 
 //js uglify
 const uglify = require('gulp-uglify');
+const babel = require('gulp-babel');
+
+
 function ugjs() {
     return src('src/js/*.js')
+    .pipe(babel({
+            presets: ['@babel/env']
+        }))
     .pipe(uglify())
     .pipe(dest('dist/js'));
 }
