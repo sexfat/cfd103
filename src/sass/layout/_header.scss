@@ -13,10 +13,10 @@ header {
           height: auto;
           display: inline-block;
           a {
-            color:  #f20;
+            color:  $menu;
             text-decoration: none;
              &:hover {
-                color: rgb(136, 18, 0);
+                color: darken($menu, 20);
              }
 
           }
