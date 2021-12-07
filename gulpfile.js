@@ -70,11 +70,11 @@ const babel = require('gulp-babel');
 
 function ugjs() {
     return src('src/js/*.js')
-    .pipe(babel({
+        .pipe(babel({
             presets: ['@babel/env']
         })) //es6-es5
-    .pipe(uglify()) // uglify js
-    .pipe(dest('dist/js'));
+        .pipe(uglify()) // uglify js
+        .pipe(dest('dist/js'));
 }
 exports.js = ugjs;
 
@@ -84,8 +84,8 @@ exports.js = ugjs;
 const clean = require('gulp-clean');
 
 function clear() {
-  return src('dist' ,{ read: false ,allowEmpty: true })//不去讀檔案結構，增加刪除效率  / allowEmpty : 允許刪除空的檔案
-  .pipe(clean({force: true})); //強制刪除檔案 
+    return src('dist', { read: false, allowEmpty: true })//不去讀檔案結構，增加刪除效率  / allowEmpty : 允許刪除空的檔案
+        .pipe(clean({ force: true })); //強制刪除檔案 
 }
 
 exports.clearall = clear;
@@ -94,12 +94,12 @@ exports.clearall = clear;
 // 壓圖 大小
 
 const imagemin = require('gulp-imagemin');
-function imgmin(){
-   return src('src/images/*.*')
-   .pipe(imagemin([
-        imagemin.mozjpeg({quality: 10, progressive: true}) // 壓縮品質      quality越低 -> 壓縮越大 -> 品質越差 
-    ]))
-   .pipe(dest('dist/images'))
+function imgmin() {
+    return src('src/images/*.*')
+        .pipe(imagemin([
+            imagemin.mozjpeg({ quality: 10, progressive: true }) // 壓縮品質      quality越低 -> 壓縮越大 -> 品質越差 
+        ]))
+        .pipe(dest('dist/images'))
 }
 
 exports.img = imgmin;
@@ -113,9 +113,32 @@ exports.img = imgmin;
 function watchall() {
     watch(['src/sass/*.scss', 'src/sass/**/*.scss'], sassstyle); // 監看哪些檔案（檔案變動）並執行sassstyle
     watch(['src/*.html', 'src/layout/*.html'], includeHTML); // 監看哪些檔案（檔案變動）並執行includeHTML 
-    watch(['src/js/*.js' , 'src/**/*.js'] , ugjs);
+    watch(['src/js/*.js', 'src/**/*.js'], ugjs);
 }
 
 exports.w = watchall;
+
+
+const browserSync = require('browser-sync');
+const reload = browserSync.reload;
+
+
+function browser(done) {
+    browserSync.init({
+        server: {
+            baseDir: "./dist",
+            index: "index.html"
+        },
+        port: 3000
+    });
+    watch(['src/sass/*.scss', 'src/sass/**/*.scss'], sassstyle).on('change', reload);
+    watch(['src/*.html', 'src/layout/*.html'], includeHTML).on('change', reload);;
+    watch(['src/js/*.js', 'src/**/*.js'], ugjs).on('change', reload);;
+    done();
+}
+
+exports.default = browser;
+
+
 
 
