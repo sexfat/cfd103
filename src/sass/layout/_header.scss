@@ -1,28 +1,33 @@
 header {
   .logo {
-     @include rect(100px, 80px);
-     display: inline-block;
-     background-color: rgb(242, 242, 242);
+    @include rect(100px, 80px);
+    display: inline-block;
+    background-color: rgb(40, 195, 252);
   }
+
   nav {
-   display: inline-block;
+    display: inline-block;
+
     ul {
       list-style: none;
-      li {
-          min-width: 100px;
-          height: auto;
-          display: inline-block;
-          a {
-            color:  $menu;
-            text-decoration: none;
-             &:hover {
-                color: darken($menu, 20);
-             }
 
+      li {
+        min-width: 100px;
+        height: auto;
+        display: inline-block;
+
+        a {
+          color: $menu;
+          text-decoration: none;
+
+          &:hover {
+            color: darken($menu, 20);
           }
+
+        }
       }
     }
-  
+
   }
 
 }

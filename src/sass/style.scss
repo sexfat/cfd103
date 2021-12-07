@@ -3,10 +3,12 @@
 @import 'layout/header';
 
 body {
- font-size: $fontSize;
- background-color: rgb(204, 255, 246);
- h1 {
-  font-size: 2.2rem;
-  transition: cubic-bezier(.8) all;
-  user-select: none;}
+  font-size: $fontSize;
+  background-color: rgb(172, 177, 255);
+
+  h1 {
+    font-size: 2.2rem;
+    transition: cubic-bezier(.8) all;
+    user-select: none;
+  }
 }
