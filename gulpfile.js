@@ -118,6 +118,14 @@ function watchall() {
 
 exports.w = watchall;
 
+//  圖片搬家
+function moveimg() {
+    return src('src/images/*.*').pipe(dest('dist/images'))
+}
+
+
+
+
 
 const browserSync = require('browser-sync');
 const reload = browserSync.reload;
@@ -133,11 +141,15 @@ function browser(done) {
     });
     watch(['src/sass/*.scss', 'src/sass/**/*.scss'], sassstyle).on('change', reload);
     watch(['src/*.html', 'src/layout/*.html'], includeHTML).on('change', reload);;
-    watch(['src/js/*.js', 'src/**/*.js'], ugjs).on('change', reload);;
+    watch(['src/js/*.js', 'src/**/*.js'], ugjs).on('change', reload);
+    watch('src/images/*.*', moveimg)
     done();
 }
 
-exports.default = browser;
+exports.default = series(parallel(moveimg, includeHTML, sassstyle, ugjs ) , browser); //dev 開發使用
+
+exports.packages = series(clear, parallel(includeHTML, sassstyle, ugjs), imgmin);
+
 
 
 

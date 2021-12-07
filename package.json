@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "gulp 監看": "gulp w",
     "套件的安裝": "npm i",
-    "清除舊檔案": "gulp clearall"
+    "開發dev": "gulp",
+    "清除舊檔案": "gulp clearall",
+    "上線打包": "gulp packages"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,7 @@
     "sass": "^1.44.0"
   },
   "dependencies": {
+    "bootstrap": "^5.1.3",
     "jquery": "^3.6.0",
     "vue": "^2.6.14"
   }
