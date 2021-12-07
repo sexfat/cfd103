@@ -72,8 +72,8 @@ function ugjs() {
     return src('src/js/*.js')
     .pipe(babel({
             presets: ['@babel/env']
-        }))
-    .pipe(uglify())
+        })) //es6-es5
+    .pipe(uglify()) // uglify js
     .pipe(dest('dist/js'));
 }
 exports.js = ugjs;
