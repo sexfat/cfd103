@@ -1,4 +1,6 @@
 @import 'base/var';
+@import 'mixin/mixin';
+@import 'layout/header';
 
 body {
  font-size: $fontSize;

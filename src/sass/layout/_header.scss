@@ -1,0 +1,28 @@
+header {
+  .logo {
+     @include rect(100px, 80px);
+     display: inline-block;
+     background-color: rgb(242, 242, 242);
+  }
+  nav {
+   display: inline-block;
+    ul {
+      list-style: none;
+      li {
+          min-width: 100px;
+          height: auto;
+          display: inline-block;
+          a {
+            color:  #f20;
+            text-decoration: none;
+             &:hover {
+                color: rgb(136, 18, 0);
+             }
+
+          }
+      }
+    }
+  
+  }
+
+}
