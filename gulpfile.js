@@ -43,7 +43,7 @@ function sassstyle() {
         .pipe(sourcemaps.init())
         .pipe(sass.sync().on('error', sass.logError))// sass編譯
         .pipe(autoprefixer())// 跨瀏覽器使用
-        .pipe(cleanCSS({compatibility: 'ie10'})) // 減小css檔案
+        .pipe(cleanCSS({ compatibility: 'ie10' })) // 減小css檔案
         .pipe(sourcemaps.write()) // 來源原始檔 
         .pipe(dest('dist/css'))// 目的地檔案
 }
@@ -63,6 +63,18 @@ function includeHTML() {
 }
 exports.html = includeHTML;
 
+//js uglify
+const uglify = require('gulp-uglify');
+function ugjs() {
+    return src('src/js/*.js')
+    .pipe(uglify())
+    .pipe(dest('dist/js'));
+}
+exports.js = ugjs;
+
+
+
+
 
 
 
@@ -70,6 +82,7 @@ exports.html = includeHTML;
 function watchall() {
     watch(['src/sass/*.scss', 'src/sass/**/*.scss'], sassstyle); // 監看哪些檔案（檔案變動）並執行sassstyle
     watch(['src/*.html', 'src/layout/*.html'], includeHTML); // 監看哪些檔案（檔案變動）並執行includeHTML 
+    watch('src/js/*.js' , ugjs);
 }
 
 exports.w = watchall;
