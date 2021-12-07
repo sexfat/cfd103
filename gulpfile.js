@@ -146,7 +146,7 @@ function browser(done) {
     done();
 }
 
-exports.default = series(parallel(moveimg, includeHTML, sassstyle, ugjs ) , browser); //dev 開發使用
+exports.default = series(browser, parallel(moveimg, includeHTML, sassstyle, ugjs)); //dev 開發使用
 
 exports.packages = series(clear, parallel(includeHTML, sassstyle, ugjs), imgmin);
 
