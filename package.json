@@ -6,7 +6,7 @@
   "scripts": {
     "gulp 監看": "gulp w",
     "套件的安裝": "npm i",
-    "清除舊檔案" : "gulp clearall" 
+    "清除舊檔案": "gulp clearall"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
     "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-file-include": "^2.3.0",
+    "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
