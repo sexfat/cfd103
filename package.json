@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/sexfat/cfd103#readme",
   "devDependencies": {
+    "css-loader": "^5.2.4",
+    "style-loader": "^2.0.0",
     "webpack": "^4.43.0"
   },
   "dependencies": {
