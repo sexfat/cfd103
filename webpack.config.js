@@ -85,5 +85,10 @@ module.exports = {
         index: 'index.html',
         open: true
     },          // 服務器配置
+    resolve: {
+        alias: {
+           vue: 'vue/dist/vue.js'
+        }
+      },// vue 路徑問題
     mode: 'development'      // 開發模式配置 production development
 }
