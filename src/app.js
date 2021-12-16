@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import { gsap } from 'gsap';
-import './style.css';
+import './style.css'; // 引入css 
 
 console.log('app1');
 
