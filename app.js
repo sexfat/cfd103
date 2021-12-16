@@ -1,9 +1,14 @@
-import $ from 'jquery' ;
+import $ from 'jquery';
+import { gsap } from 'gsap';
 
 console.log('webpack start');
 
-const x = (x , y) => x * y;
-document.getElementById('app').innerHTML =  x(200 , 800);
+const x = (x , y) => x * y + 'NT$';
+document.getElementById('app').innerHTML =  x(900 , 800);
+// jq
+$('body').css('background-color' , 'green');
 
-$('body').css('background-color' , '#f20');
+// gsap
+gsap.to('.box' , {x: 200 , y : 300});
+
 
