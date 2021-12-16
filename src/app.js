@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import { gsap } from 'gsap';
+import './style.css';
 
 console.log('app1');
 
