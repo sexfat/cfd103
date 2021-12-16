@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import { gsap } from 'gsap';
 
-console.log('webpack start');
+console.log('app1');
 
 const x = (x , y) => x * y + 'NT$';
 document.getElementById('app').innerHTML =  x(900 , 800);

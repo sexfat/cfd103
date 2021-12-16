@@ -2,8 +2,7 @@ const path = require('path');
 
 
 module.exports = {
-
-    entry: './src/app.js', // 入口文件
+    entry: ['./src/app.js' ,'./src/app2.js'], // 入口文件
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
