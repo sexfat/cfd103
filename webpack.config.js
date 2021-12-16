@@ -6,25 +6,26 @@ module.exports = {
     // entry: ['./src/app.js' ,'./src/app2.js'], // 入口文件 //array
     entry: {
       home : './src/app.js',
-      about : './src/app2.js' 
+      about : './src/app2.js', 
+      sass : './src/app3.js' 
     }, // 入口文件 //object
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].js'
     },             // 出口文件
-   module: {
+    module: {
         rules: [{
             // 格式
-            test: /\.css$/,
-            //順序是由下到上 css > style
+            test: /\.(sass|scss|css)$/,
+            //順序是由下到上 sass > css > style
             use: [{
                 loader: MiniCssExtractPlugin.loader,
                 options: {
                   publicPath: './dist'
                 }
               },
-                //'style-loader', 會跟原本的衝突 
-                'css-loader'
+                'css-loader',
+                'sass-loader'
             ],
         }]
 
