@@ -4,10 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "套件的安裝": "npm i",
-    "開發dev": "gulp",
-    "清除舊檔案": "gulp clearall",
-    "上線打包": "gulp packages"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -21,24 +18,6 @@
   },
   "homepage": "https://github.com/sexfat/cfd103#readme",
   "devDependencies": {
-    "@babel/core": "^7.16.0",
-    "@babel/preset-env": "^7.16.4",
-    "browser-sync": "^2.27.7",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
-    "gulp-babel": "^8.0.0",
-    "gulp-clean": "^0.4.0",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-file-include": "^2.3.0",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-sass": "^5.0.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "gulp-uglify": "^3.0.2",
-    "sass": "^1.44.0"
-  },
-  "dependencies": {
-    "bootstrap": "^5.1.3",
-    "jquery": "^3.6.0",
-    "vue": "^2.6.14"
+    "webpack": "^4.43.0"
   }
 }
